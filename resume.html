@@ -2,18 +2,101 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8">
-       <title>DH Resume Page</title>
+       <title>Resume</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="./dist/css/resume.css">
+       <meta name="description" content="David Halsey Full Stack Web and Hybrid Mobile Applications Developer">
+       <meta name="keywords" content="Chicago, Full Stack, Coder, SQL, HTML, ">
+       <link rel='icon' href='favicon.ico' type='image/x-icon'>
+       <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav>
+        <header>
+            <span class="logo">David Halsey</span>
+            <a id="toggleMenu">Menu<a>
+                <nav>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="resume.html">Resume</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+    <main>
+        <section>
+        <div class="Name1">David Halsey</div>
+            <div class="Contact1">
+                Chicago, IL 60630 &#x25CF; 773 987-8109<br>
+            <a href="https://www.linkedin.com/in/david-halsey-9ab78617a/" target="_blank" rel="noopener">LinkedIn</a>
+            &#x25CF; <a href="https://dartndav.github.io/index.html"target="_blank"> Github webpage</a>
+            &#x25CF; <a href="mailto:DartnDav@aol.com">DartnDav@aol.com</a>
+            </div>
+            <h3 class="Full_Stack">Full Stack Web and Hybrid Mobile Applications Developer (in training)</h3>
+           <p class="experience_years">CNC Flat laser programmer with over 13 years of experience and 32 years of producing multiple products. 28 years of experience on PCs.</p>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
+                <li>Familiar with a variety of coding, database, networking, and operating system.</li>
+                <li>In addition to digital skills, mechanical, electrical and trouble shooting skills are included in my experience.</li>
             </ul>
-        </nav>
-        <h1>David Halsey's Resume</h1>
+                <p class="competencies">Core Competencies</p>
+                <div class="row">
+                        <div class="col1">
+                        <ul>
+                            <li>CODING: HTML, CSS, Sass, SQL, C++, G&M Machine</li>
+                            <li>ERP Database: Made2Manage (15 Years)</li>
+                            <li>OPERATING SYSTEMS: Windows 7, 8, 10; Linux Ubuntu & Kali; Mobile-Android & IOS</li>
+                            <li>Full Stack Development (in training)</li>
+                        </ul>
+                    </div>
+                    
+                        <div class="col2"></div>
+                            <li>WORD AND DATA PROCESSING: Word, Excel, OneNote, PowerPoint, WordPerfect</li>
+                            <li>COMMUNICATION AND REMOTE: Skype, Slack, LogMeIn, TeamViewer</li>
+                            <li>MANUFACTURING: Mazatrol CNC, SigmaNest, ByBase & BySoft (Bystronic Proprietary)</li>
+                      </div>
+                    </div>
+            </ul>
+            <div>
+                <p><strong>CERTIFICATIONS / TECHNICAL PROFICIENCIES</strong><br>
+                Certifications: Agile Certified Scrum Master<br>
+                Platforms: Linux, Windows, Mac, LAMP, MEAN, NodeJS<br>
+                Database: MySQL, MongoDB<br>
+                Tools: VS Code, SSH, Gulp, Git<br>
+                Languages: HTML, CSS, SASS, JavaScript, ES6, PHP, Bash, SQL
+                </p>
+                <p><strong>PROFESSIONAL EXPERIENCE</strong><br>
+                &#x25CF;Bob’s Custom Websites – Chicago, IL 
+                2015 – Present<br>
+                Bob’s Custom Websites builds custom web applications for clients across a large number of industries.<br>
+                <strong>Web Developer</strong><br>
+                &#x25CF; Work with ES6, NodeJS, HTML, JavaScript, CSS, MySQL and MongoDB to build customized<br>
+                &#x25CF; web applications for a diverse set of customers.<br>
+                &#x25CF; Designed the application to meet the users’ requirements document. Ensured corporate and department objectives were accomplished in accordance with outlinedobjectives and mission statements.<br>
+                <strong>Key Contributions:</strong><br>
+                &#x25CF; Developed and implemented procedures and guidelines, optimizing productivity and efficiency;
+                generating significant cost savings.<br>
+                &#x25CF; Recognized for the development of excellent business relationships, providing exemplary customer
+                service.</p>
+                <p><strong>EDUCATION</strong>
+                MicroTrain Technologies – Chicago, IL<br>
+                Agile Full Stack Web and Hybrid Mobile Application Development
+                2019</p>
         <!--<p>Open a PDF file of my resume to print or download<a href="DH_Resume.pdf">My Resume</a></p>-->
+    </section>
+    </main>
+    <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+                'click',
+                function(){
+                    if(nav.style.display=='block'){
+                    nav.style.display='none';
+                    }else{
+                        nav.style.display='block';
+                    }
+                }                
+              );
+        </script>
     </body>
 </html>

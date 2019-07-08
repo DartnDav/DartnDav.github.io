@@ -2,17 +2,24 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8">
-      <title>DH Contact Page</title>
+      <title>Contact Me</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+      <link rel='icon' href='favicon.ico' type='image/x-icon'>
     </head>
     <body>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <header>
+            <span class="logo">David Halsey</span>
+            <a id="toggleMenu">Menu<a>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </nav>
+            </header>
+            <main>
       <h2>David Halsey</h2>
       <p><img style="border-radius: 50%; display: block;" src="https://s.gravatar.com/avatar/c5a3475bb64c26f6f094bf22bee49441?s=80" alt="My Avatar">
       <form action="https://formspree.io/dartndav@aol.com" method="POST"></p>
@@ -36,5 +43,21 @@
           <input type="submit" value="Send">
         </div>
       </form>
+    </main>
+    <script>
+
+        var toggleMenu = document.getElementById('toggleMenu');
+        var nav = document.querySelector('nav');
+        toggleMenu.addEventListener(
+            'click',
+            function(){
+                if(nav.style.display=='block'){
+                nav.style.display='none';
+                }else{
+                    nav.style.display='block';
+                }
+            }                
+          );
+    </script>
     </body>
 </html>

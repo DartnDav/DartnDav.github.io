@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
        <title>David Halsey</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+       <link rel='icon' href='favicon.ico' type='image/x-icon'>
     </head>
     <body>
+        <header>
+        <span class="logo">David Halsey</span>
+        <a id="toggleMenu">Menu<a>
         <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -13,9 +18,28 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>Hello, I am David Halsey</h1>
-    <img style="border-radius: 50%; display: block;" src="https://s.gravatar.com/avatar/c5a3475bb64c26f6f094bf22bee49441?s=80" alt="My Avatar">
-    <strong><p style=margin-left:5em;>Welcome To My Home Page</p></strong>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis laudantium provident, similique doloremque odit sunt corporis quos velit, cum a dolores minus. Exercitationem natus deleniti fugit nulla, corporis soluta hic</p>
+        </header>
+        <main>
+        <h1>Hello, I am David</h1>
+    <img class="avatar" src="https://s.gravatar.com/avatar/c5a3475bb64c26f6f094bf22bee49441?s=80" alt="My Avatar">
+    <strong><p>Welcome To My Home Page</p></strong>
+    <p>Hello! My name is David Halsey and I'm a Computer Programmer I was a CNC Laser Programmer and Operator at Freedman Seating Company for 15 years. I pay close attention to detail to produce high-quality work the first time around. I'm always looking to find solutions to problems before you even know the problems exist. I take your company mission and values seriously and work with customers diligently to become a trusted ally. I'm able to quickly understand your needs, goals, and frustrations to work with you and your team to engineer a path forward. I am not afraid to confront change and adapt plans to accommodate alternative solutions. What sets me apart is my commitment to the highest standards of client service. I make sure technology works for you instead of against you.
+    </p>
+        </main>
+        <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+                'click',
+                function(){
+                    if(nav.style.display=='block'){
+                    nav.style.display='none';
+                    }else{
+                        nav.style.display='block';
+                    }
+                }                
+              );
+        </script>
     </body>
 </html>

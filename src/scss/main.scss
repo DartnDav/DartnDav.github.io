@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 50px;
+    background: #000;
+    color: #fff;
+    padding: 0 .5rm 0 1em;
+  }
+  
+  header .logo{
+    line-height: 50px;
+    font-weight: bold;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li{
+    display: inline;
+  }
+  
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited{
+    display: inline-block;
+    padding: 0 .5em;
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover{
+    background: #444;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 960px;
+    max-width: 100%;
+  }
+
+  #toggleMenu {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 960px)  {
+
+    #toggleMenu {
+      display: block;
+      float: right;
+      line-height: 50px;
+    }
+  
+    header {
+        position: relative;
+      }
+    
+    nav {
+        position: absolute;
+        display: none;
+        background: #000;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }  
+
+    nav ul li a,
+    nav ul li a:link,
+    nav ul li a:visited{
+      display: block;
+      border-bottom: 1px solid #777;
+    }
+  }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.avatar{
+    border-radius: 50%;
+    float: left;
+    margin-right: 1em;
+}
+
+.contact-form{
+    max-width: 300px;
+    float: left;
+    margin: 0 auto;
+    background: #ccc;
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+}
+
+.contact-form label{
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea{
+    font-size: 2rem;
+    padding: .5rem .25rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"]{
+    font-size: 2rem;
+    padding: .5rem .25rem;
+}
+
+@media only screen and (max-width: 420px)  {
+    .contact-form input[type="submit"]{
+        display: block;
+        width: 100%;        
+    }
+}
