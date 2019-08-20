@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-      <title>Contact Me</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
-      <link rel='icon' href='favicon.ico' type='image/x-icon'>
-    </head>
-    <body>
-      <header>
-            <span class="logo">David Halsey</span>
-            <a id="toggleMenu">Menu<a>
-            <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-                </nav>
-            </header>
-            <main>
-      <h2>David Halsey</h2>
-      <p><img style="border-radius: 50%; display: block;" src="https://s.gravatar.com/avatar/c5a3475bb64c26f6f094bf22bee49441?s=80" alt="My Avatar">
-      <form action="https://formspree.io/dartndav@aol.com" method="POST"></p>
-        <div>
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name">
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" type="text" name="_replyto">  
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message"></textarea>
-        </div>
-        <div>
-          <input type="text" name="_gotcha" style="display:none">
-          <input type="hidden" name="_subject" value=""//dartndav.github.io/thanks.html"">
-        </div>
-        <div>
-          <input type="submit" value="Send">
-        </div>
-      </form>
-    </main>
-    <script>
 
-        var toggleMenu = document.getElementById('toggleMenu');
-        var nav = document.querySelector('nav');
-        toggleMenu.addEventListener(
-            'click',
-            function(){
-                if(nav.style.display=='block'){
-                nav.style.display='none';
-                }else{
-                    nav.style.display='block';
-                }
-            }                
-          );
-    </script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+  <link rel='icon' href='favicon.ico' type='image/x-icon'>
+</head>
+
+<body>
+  <header>
+    <span class="logo">David Halsey</span>
+    <a id="toggleMenu">Menu<a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html" title="You are already at
+  my contact page.">Contact</a></li>
+          </ul>
+        </nav>
+  </header>
+  <main>
+    <h2>David Halsey</h2>
+    <p><img style="border-radius: 50%; display: block;"
+        src="https://s.gravatar.com/avatar/c5a3475bb64c26f6f094bf22bee49441?s=80" alt="My Avatar">
+      <form action="https://formspree.io/dartndav@aol.com" method="POST">
+    </p>
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="text" name="_replyto">
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <div>
+      <input type="text" name="_gotcha" style="display:none">
+      <input type="hidden" name="_subject" value=""//dartndav.github.io/thanks.html""> </div> <div>
+      <input type="submit" value="Send">
+    </div>
+    </form>
+  </main>
+  <script>
+
+    var toggleMenu = document.getElementById('toggleMenu');
+    var nav = document.querySelector('nav');
+    toggleMenu.addEventListener(
+      'click',
+      function () {
+        if (nav.style.display == 'block') {
+          nav.style.display = 'none';
+        } else {
+          nav.style.display = 'block';
+        }
+      }
+    );
+  </script>
+</body>
+
 </html>
