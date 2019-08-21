@@ -141,7 +141,12 @@ header {
 @media only screen and (max-width: 420px)  {
     .contact-form input[type="submit"]{
         display: block;
-        width: 100%;        
+        width: 100%;
+    }
+    .cert {
+      margin-top: none;
+      margin-left: none;
+      list-style: none;
     }
 }
 
@@ -170,32 +175,232 @@ p.experience_years {
   margin-top: 0px;
   margin-bottom: 0px
 }
-/* floating griid with clearfix*/
+.competencies1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+/* floating grid with clearfix*/
 * {
   box-sizing: border-box;
 }
 
-.row {
-  background: blue;
-  padding: 1rem;
-  margin-bottom: 1rem;
+// .row {
+//   background: blue;
+//   padding: 1rem;
+//   margin-bottom: 1rem;
+// }
+
+// .col1 {
+//   width: 50%;
+//   float: left;
+//   border: 1px solid #990000;
+//   height: 100px;
+//   background: #fff;
+//   text-align: left;
+//   line-height: 10px;
+// }
+// .col2 {
+//   width: 50%;
+//   float: right;
+//   border: 1px solid #990000;
+//   height: 100px;
+//   background: #fff;
+//   text-align: left;
+//   line-height: 10px;
+// }
+
+// DH Added
+
+.message_scroll1 {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
 }
 
-.col1 {
-  width: 50%;
-  float: left;
-  border: 1px solid #990000;
-  height: 100px;
-  background: #fff;
-  text-align: left;
-  line-height: 10px;
+.message_scroll1 h3 {
+  font-size: 2em;
+  color: orangered;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: message_scroll1 10s linear infinite;
+  -webkit-animation: message_scroll1 10s linear infinite;
+  animation: message_scroll1 10s linear infinite;
 }
-.col2 {
-  width: 50%;
-  float: right;
-  border: 1px solid #990000;
-  height: 100px;
-  background: #fff;
-  text-align: left;
-  line-height: 10px;
+
+/* Move it (define the animation) */
+@-moz-keyframes message_scroll1 {
+  0% {
+      -moz-transform: translateX(100%);
+  }
+
+  100% {
+      -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes message_scroll1 {
+  0% {
+      -webkit-transform: translateX(100%);
+  }
+
+  100% {
+      -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes message_scroll1 {
+  0% {
+      -moz-transform: translateX(100%);
+      /* Firefox bug fix */
+      -webkit-transform: translateX(100%);
+      /* Firefox bug fix */
+      transform: translateX(100%);
+  }
+
+  100% {
+      -moz-transform: translateX(-100%);
+      /* Firefox bug fix */
+      -webkit-transform: translateX(-100%);
+      /* Firefox bug fix */
+      transform: translateX(-100%);
+  }
+}
+
+*[class^="col-"]{
+  // background: #990000;
+  border: 1px solid black;
+  padding: 1em 0;
+  color: Black;
+  text-align: Left;
+}
+
+/* Small devices - 2 rows/2 columns then 1 column */
+.grid-6 {
+  display: grid;
+  /* smaller devices will only be 2 columns wide */
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-6 .col-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.grid-6 .col-2 { 
+  /* Make the second column it's own full row */
+  grid-column: span 2;
+  grid-row: 2;
+}
+.grid-6 .col-3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Larger displays - 1 row/3 columns */
+@media only screen and (min-width : 768px) {
+  .grid-6 {
+    display: grid;
+    /* larger devices will only be 3 columns wide */
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-6 .col-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .grid-6 .col-2 { 
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .grid-6 .col-3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+// /* Small devices - 2 rows/2 columns then 1 column */
+// .grid-5 {
+//   display: grid;
+//   /* smaller devices will only be 2 columns wide */
+//   grid-template-columns: repeat(2, 1fr);
+// }
+// .grid-5 .col-1a {
+//   grid-column: 1;
+//   grid-row: 1;
+// }
+// .grid-5 .col-2a { 
+//   /* Make the second column it's own full row */
+//   grid-column: span 2;
+//   grid-row: 2;
+// }
+// .grid-5 .col-3a {
+//   grid-column: 2;
+//   grid-row: 1;
+// }
+
+/* Larger displays - 1 row/3 columns */
+@media only screen and (min-width : 768px) {
+  .grid-1 {
+    display: grid;
+
+    /* larger devices will only be 1 columns wide */
+    grid-template-columns: none;
+  }
+  .grid-1 .col-1a {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .grid-1 .col-2a { 
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .grid-1 .col-3a {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .grid-1 .col-4a {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .grid-1 .col-5a {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .cert{
+  margin-top: 0;
+  margin-left:23%;
+  list-style: none;
+}
+}
+
+div .grid-1 {
+  margin: 50%;
+}
+
+.sum {
+  margin: none;
+  list-style: none;
+}
+
+.Projects1 {
+  list-style: none;
+  margin-top: 0px;
+}
+
+.title1 {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
+.Top_para {
+  margin-top: 0px;
 }

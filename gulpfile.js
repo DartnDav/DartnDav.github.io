@@ -17,6 +17,7 @@ gulp.task('build-css', function () {
   ])
     .pipe(scss())
     .pipe(concat('main.css'))
+    .pipe(concat('resume.css'))
     .pipe(gulp.dest('dist/css'));
 
   //Create a minified version
