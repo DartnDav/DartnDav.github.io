@@ -102,6 +102,7 @@ main {
   font-size: 2rem;
   padding: .5rem .25rem;
   max-width: 100%;
+  margin-left: 1rem;
   margin-bottom: 1rem;
   box-sizing: border-box; }
 
@@ -113,6 +114,31 @@ main {
   .contact-form input[type="submit"] {
     display: block;
     width: 100%; } }
+
+#name {
+  margin-left: 164px; }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #45a049; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {

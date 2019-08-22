@@ -86,6 +86,9 @@ header {
       display: block;
       border-bottom: 1px solid #777;
     }
+    body{
+      margin: 5px;
+  }
   }
 
 .clearfix:after {
@@ -123,15 +126,16 @@ header {
     font-size: 1.5rem;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea{
-    font-size: 2rem;
-    padding: .5rem .25rem;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-}
+// .contact-form input[type="text"],
+// .contact-form input[type="email"]{
+// // .contact-form textarea{
+//     font-size: 2rem;
+//     padding: .5rem .25rem;
+//     max-width: 100%;
+//     margin-left: 1rem;
+//     margin-bottom: 1rem;
+//     box-sizing: border-box;
+// }
 
 .contact-form input[type="submit"]{
     font-size: 2rem;
@@ -143,4 +147,40 @@ header {
         display: block;
         width: 100%;        
     }
+}
+
+input[type=text], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 25%;
+  height: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
