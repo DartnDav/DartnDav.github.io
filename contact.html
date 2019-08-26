@@ -25,31 +25,32 @@
   <main>
     <h2>Getting in touch is easy!</h2>
     <p><img class="avatar" src="https://s.gravatar.com/avatar/c5a3475bb64c26f6f094bf22bee49441?s=80" alt="My Avatar">
-
-      <form action="https://formspree.io/David.Halsey.02@gmail.com" method="POST"></form>
     </p> <br>
     <p>If you have any questions, please fill out the quick form <br> and I will be in touch with you in lightning
       speed.
       Thanks!
     </p>
-    <div>
-      <label for="name">Name</label><br>
-      <input id="name" type="text" name="name">
-    </div>
-    <div>
-      <label for="email">Email</label><br>
-      <input id="email" type="text" name="_replyto">
-    </div>
-    <div>
-      <label for="message">Message</label><br>
-      <textarea id="message" name="message"></textarea>
-    </div>
-    <div>
+    <form action="https://formspree.io/David.Halsey.02@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://dartndav.github.io/thanks">
       <input type="text" name="_gotcha" style="display:none">
-      <input type="hidden" name="_next" value="https://dartndav.github.io/thanks.html"></div>
-    <div>
-      <input type="submit" value="Send">
-    </div>
+      <div>
+        <label for="name">Name</label><br>
+        <input id="name" type="text" name="name">
+      </div>
+      <div>
+        <label for="email">Email</label><br>
+        <input id="email" type="text" name="_replyto">
+      </div>
+      <div>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <div>
+        <input type="hidden" name="_subject" value="New submission!">
+      </div>
+      <div>
+        <input type="submit" value="Send">
+      </div>
     </form>
   </main>
   <script>
