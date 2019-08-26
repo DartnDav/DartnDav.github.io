@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
-       <title>Thanks</title>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" type="text/css" href="/src/scss/main.css">
-    </head>
-    <body>
-        <header>
-            <span class="logo">David Halsey</span>
-            <a id="toggleMenu">Menu<a>
+    <title>Thanks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+</head>
+
+<body>
+    <header>
+        <span class="logo">David Halsey</span>
+        <a id="toggleMenu">Menu<a>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -17,22 +19,25 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-        </header>
+    </header>
+    <main>
         <h2>Thank you for contacting me, I will get back to you shortly.</h2>
-        <script>
+    </main>
+    <script>
 
-                var toggleMenu = document.getElementById('toggleMenu');
-                var nav = document.querySelector('nav');
-                toggleMenu.addEventListener(
-                    'click',
-                    function(){
-                        if(nav.style.display=='block'){
-                        nav.style.display='none';
-                        }else{
-                            nav.style.display='block';
-                        }
-                    }                
-                );
-        </script>
-    </body>
+        var toggleMenu = document.getElementById('toggleMenu');
+        var nav = document.querySelector('nav');
+        toggleMenu.addEventListener(
+            'click',
+            function () {
+                if (nav.style.display == 'block') {
+                    nav.style.display = 'none';
+                } else {
+                    nav.style.display = 'block';
+                }
+            }
+        );
+    </script>
+</body>
+
 </html>
