@@ -4,11 +4,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-// body {
-//   padding: 0;
-//   margin: 0;
-//,}
-
 body {
   margin: 0px;
   padding: 0px;
@@ -138,7 +133,7 @@ main {
 
 // .contact-form input[type="text"],
 // .contact-form input[type="email"]{
-// // .contact-form textarea{
+// .contact-form textarea{
 //     font-size: 2rem;
 //     padding: .5rem .25rem;
 //     max-width: 100%;
@@ -157,6 +152,11 @@ main {
     display: block;
     width: 100%;
   }
+  // .cert {
+  //   margin-top: none;
+  //   margin-left: none;
+  //   list-style: none;
+  // }
 }
 
 input[type="text"],
@@ -194,4 +194,216 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+// DH Added
+.Name1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 4px 4px #aaa;
+  padding-top: 20px;
+}
+
+.Contact1, .Full_Stack{
+  text-align: center;
+  font-weight: bold;
+} 
+
+p.experience_years {
+  text-align: justify;
+  padding-left: 25px;
+  padding-right: 400px;
+}
+
+.competencies {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+.competencies1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
+/* floating grid with clearfix*/
+* {
+  box-sizing: border-box;
+}
+
+// style Scrolling effect
+  .message_scroll1 {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .message_scroll1 h3 {
+    font-size: 2em;
+    color: orangered;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: message_scroll1 10s linear infinite;
+    -webkit-animation: message_scroll1 10s linear infinite;
+    animation: message_scroll1 10s linear infinite;
+  }
+
+  /* Move it (define the animation) */
+  @-moz-keyframes message_scroll1 {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+  }
+
+  @-webkit-keyframes message_scroll1 {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+  }
+
+  @keyframes message_scroll1 {
+    0% {
+        -moz-transform: translateX(100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(100%);
+        /* Firefox bug fix */
+        transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(-100%);
+        /* Firefox bug fix */
+        transform: translateX(-100%);
+    }
+  }
+
+
+*[class^="col-"]{
+  // background: #990000;
+  border: 1px solid black;
+  padding: 1em 0;
+  color: Black;
+  text-align: Left;
+}
+
+/* Small devices - 2 rows/2 columns then 1 column */
+.grid-6 {
+  display: grid;
+  /* smaller devices will only be 2 columns wide */
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-6 .col-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.grid-6 .col-2 { 
+  /* Make the second column it's own full row */
+  grid-column: span 2;
+  grid-row: 2;
+}
+.grid-6 .col-3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Larger displays - 1 row/3 columns */
+@media only screen and (min-width : 768px) {
+  .grid-6 {
+    display: grid;
+    /* larger devices will only be 3 columns wide */
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-6 .col-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .grid-6 .col-2 { 
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .grid-6 .col-3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+/* Larger displays - 1 row/3 columns */
+@media only screen and (min-width : 768px) {
+  .grid-1 {
+    display: grid;
+
+    /* larger devices will only be 1 columns wide */
+    grid-template-columns: none;
+  }
+  .grid-1 .col-1a {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .grid-1 .col-2a { 
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .grid-1 .col-3a {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .grid-1 .col-4a {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .grid-1 .col-5a {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .cert{
+  margin-top: 0;
+  margin-left:23%;
+  list-style: none;
+  }
+}
+
+div .grid-1 {
+  margin: 50%;
+}
+
+.sum {
+  margin: none;
+  list-style: none;
+}
+
+.Projects1 {
+  list-style: none;
+  margin-top: 0px;
+}
+
+.title1 {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
+.Top_para {
+  margin-top: 0px;
 }
